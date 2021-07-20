@@ -17,8 +17,6 @@ const Home = () => {
   const { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } =
     useHomeFetch();
 
-  console.log(state);
-
   if (error) return <div>Something is went wrong...</div>;
 
   return (
@@ -48,7 +46,7 @@ const Home = () => {
       </Grid>
       {loading && <Spinner />}
       {state.page < state.total_pages && !loading && (
-        <Button text="Load More" callback={() => setIsLoadingMore(true)}/>
+        <Button text="Load More" callback={() => setIsLoadingMore(true)} />
       )}
     </>
   );

@@ -42,18 +42,6 @@ export const Text = styled.div`
     display: flex;
     justify-content: flex-start;
   }
-  .score {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    color: #000;
-    font-weight: 800;
-    border-radius: 50%;
-    margin: 0 0 0 7px;
-  }
 
   .director {
     margin: 0 0 0 40px;

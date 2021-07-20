@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 //Config
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../config";
 //Components
@@ -31,10 +32,11 @@ const Movie = () => {
         revenue={movie.revenue}
       />
       <Grid header="Actors">
-        {movie.actors.map(actor => (
+        {movie.actors.map((actor) => (
           <Actor
             key={actor.credit_id}
             name={actor.name}
+            actorId={actor.id}
             chracter={actor.chracter}
             imageUrl={
               actor.profile_path
