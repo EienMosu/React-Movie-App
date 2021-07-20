@@ -17,8 +17,6 @@ const Actors = () => {
     const { actorId } = useParams();
     const {state: actor, loading, error} = useActorFetch(actorId);
 
-    console.log(actor);
-
     if (loading) return <Spinner />;
     if (error) return <div>Something went wrong!..</div>;
 
